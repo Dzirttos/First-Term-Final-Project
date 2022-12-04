@@ -1,7 +1,13 @@
 ﻿// Написать программу, которая из имеющегося массива строк формирует массив из строк, длина которых меньше либо равна 3 символам. 
 Console.Clear();
 
+Console.WriteLine("Please enter desired array length:");
+int n = Convert.ToInt32(Console.ReadLine());
 
+string[] array = FillArray(n);
+ShowArray(array);
+string[] newArray = ResultArray(array);
+ShowResultArray(newArray);
 
 string[] FillArray(int size)
 {
