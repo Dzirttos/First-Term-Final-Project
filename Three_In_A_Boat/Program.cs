@@ -36,3 +36,10 @@ string[] ResultArray(string[] firstArray)
     }
     return secondArray;
 }
+
+void ShowResultArray(string[] resultArray)
+{
+    Console.WriteLine();
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.Write("The result array with elements shorter or equal to 3 symbols is: [ " + String.Join(", ", resultArray) + " ]");
+}
