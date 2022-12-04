@@ -13,3 +13,10 @@ string[] FillArray(int size)
     }
     return userArray;
 }
+
+void ShowArray(string[] userArray)
+{
+    Console.WriteLine();
+    Console.ForegroundColor = ConsoleColor.Yellow;
+    Console.Write("You have created the following array: [ " + String.Join(", ", userArray) + " ]");
+}
