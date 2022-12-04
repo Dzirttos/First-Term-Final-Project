@@ -20,3 +20,19 @@ void ShowArray(string[] userArray)
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.Write("You have created the following array: [ " + String.Join(", ", userArray) + " ]");
 }
+
+string[] ResultArray(string[] firstArray)
+{
+    int size = 0;
+    string[] secondArray = new string[size];
+    for (int i = 0; i < firstArray.Length; i++)
+    {
+        if (firstArray[i].Length <= 3)
+        {
+            size++;
+            Array.Resize(ref secondArray, size);
+            secondArray[size - 1] = firstArray[i];
+        }
+    }
+    return secondArray;
+}
